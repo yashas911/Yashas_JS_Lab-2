@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+        body {
+            background-color: rgb(156, 199, 200);
+        }
+
+        .container {
+            width: 600px;
+            height: 500px;
+            background-image: radial-gradient(circle, rgb(3, 25, 88), rgb(52, 104, 124), rgb(81, 192, 151));
+            border: 2px solid;
+            margin: 0px auto;
+            padding: 10px 50px 50px 50px;
+        }
+
+        .container h1 {
+            font-size: 60px;
+            background-image: linear-gradient(to right, rgb(0, 126, 128), black);
+            color: white;
+            padding: 2px 0px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container #question {
+            font-size: 30px;
+            color: rgb(255, 255, 245);
+            text-shadow: 2px 2px rgb(104, 176, 184);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #btn0,
+        #btn1,
+        #btn2,
+        #btn3 {
+            background-color: rgb(115, 132, 201);
+            color: white;
+            font-size: 20px;
+            width: 250px;
+            margin: 10px 40px 10px 0px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+
+        #progress {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="quiz">
+            <h1>Javascript Quiz</h1>
+            <hr />
+            <p id="question">...question comes up here</p>
+            <div class="buttons">
+                <button id="btn0" class="btn" data-option="0">
+                    <span id="choice0">choice 0</span>
+                </button>
+                <button id="btn1" class="btn" data-option="1">
+                    <span id="choice1">choice 1</span>
+                </button>
+                <button id="btn2" class="btn" data-option="2">
+                    <span id="choice2">choice 2</span>
+                </button>
+                <button id="btn3" class="btn" data-option="3">
+                    <span id="choice3">choice 3</span>
+                </button>
+            </div>
+            <hr />
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
